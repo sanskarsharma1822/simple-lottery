@@ -102,5 +102,4 @@ lint/tmp/
 gas-report.txt
 
 package-lock.json
-yarn.lock
 yarn-error.log
