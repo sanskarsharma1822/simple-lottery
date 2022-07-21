@@ -39,10 +39,10 @@ module.exports = async function ({ deployments, getNamedAccounts }) {
     console.log("Lottery Contract Deployed")
     console.log("-------------------------------------------")
 
-    if (!developmentChains.includes(network.name) && process.env.ETHERSCAN_API_KEY) {
-        console.log("Verifying ...")
-        await verify(lottery.address, args)
-    }
+    // if (!developmentChains.includes(network.name) && process.env.ETHERSCAN_API_KEY) {
+    //     console.log("Verifying ...")
+    //     await verify(lottery.address, args)
+    // }
 }
 
 module.exports.tags = ["all", "lottery"]
